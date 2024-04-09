@@ -22,7 +22,7 @@ export default function Home() {
   const [search, setSearch] = useState('');
 
   const loadFoodItems = async () => {
-    let response = await fetch("http://localhost:3600/api/foodData", {
+    let response = await fetch("https://gofood-1-pmft.onrender.com/api/foodData", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
